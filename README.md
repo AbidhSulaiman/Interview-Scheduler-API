@@ -38,7 +38,7 @@ A simple yet powerful API to streamline the process of scheduling interviews. Th
 To authenticate a user and retrieve a token for subsequent requests, send a POST request to the login endpoint.
 
 ### Endpoint:
-**POST** `/login/`
+**POST** `authenticate/login/`
 
 ### Request Body (JSON):
 
@@ -63,7 +63,7 @@ To authenticate a user and retrieve a token for subsequent requests, send a POST
 Authenticated users can register or update their availability slots by sending a POST request to the register-availability/ endpoint.
 
 ### Endpoint:
-**POST** `/register-availability/`
+**POST** `availability/register-availability/`
 
 ### Request Headers:
 ```json
