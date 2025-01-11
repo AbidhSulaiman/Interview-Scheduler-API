@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'availability',
     'rest_framework',
     'rest_framework.authtoken',
+    
 ]
 
 REST_FRAMEWORK = {
