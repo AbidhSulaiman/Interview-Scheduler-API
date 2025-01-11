@@ -47,5 +47,45 @@ To authenticate a user and retrieve a token for subsequent requests, send a POST
     "username": "your_username",
     "password": "your_password"
 }
+```
+
+### Request Response (JSON):
+
+```json
+{
+    "message": "Login successful",
+    "token": "your_token_here"
+}
+```
+
+## 2. Register Availability
+
+Authenticated users can register or update their availability slots by sending a POST request to the register-availability/ endpoint.
+
+### Endpoint:
+**POST** `/register-availability/`
+
+### Request Headers:
+```json
+  Authorization: Token your_token_here
+```
+### Request Body (JSON):
+
+```json
+{ "date": "2025-01-11",
+ "start_time": "09:00:00",
+ "end_time": "17:00:00" }
+```
+
+### Request Response (JSON):
+
+```json
+{ "message": "Availability registered successfully.",
+ "data": {
+   "date": "2025-01-11",
+   "start_time": "09:00:00",
+   "end_time": "17:00:00"
+ } }
+```
 
 
