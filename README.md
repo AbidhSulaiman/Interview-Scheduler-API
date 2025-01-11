@@ -31,5 +31,21 @@ A simple yet powerful API to streamline the process of scheduling interviews. Th
    ```bash
    python manage.py runserver
 
-## Test API
+# API Testing with Postman
+
+## 1. Login
+
+To authenticate a user and retrieve a token for subsequent requests, send a POST request to the login endpoint.
+
+### Endpoint:
+**POST** `/login/`
+
+### Request Body (JSON):
+
+```json
+{
+    "username": "your_username",
+    "password": "your_password"
+}
+
 
