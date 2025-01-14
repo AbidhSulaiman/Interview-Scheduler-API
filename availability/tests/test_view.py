@@ -16,7 +16,7 @@ class AvailabilityViewTest(TestCase):
     def test_register_availability(self):
         # Registering new availability
         data = {
-            "date": "2025-01-12",
+            "date": "2025-02-12",
             "start_time": "10:00:00",
             "end_time": "13:00:00"
         }
@@ -30,14 +30,14 @@ class AvailabilityViewTest(TestCase):
         # Create an initial availability record
         Availability.objects.create(
             user=self.user,
-            date=date(2025, 1, 12),
+            date=date(2025, 2, 12),
             start_time=time(10, 0),
             end_time=time(13, 0)
         )
         
         # Updating availability
         data = {
-            "date": "2025-01-12",
+            "date": "2025-02-12",
             "start_time": "11:00:00",
             "end_time": "14:00:00"
         }

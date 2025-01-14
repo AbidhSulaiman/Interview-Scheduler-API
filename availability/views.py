@@ -81,7 +81,7 @@ class RegisterAvailabilityView(APIView):
         
         if serializer.is_valid():
             # Extract the date and time from the request data
-            date = request.data.get('date')
+            date = serializer.validated_data['date']
             start_time = serializer.validated_data['start_time']
             end_time = serializer.validated_data['end_time']
 

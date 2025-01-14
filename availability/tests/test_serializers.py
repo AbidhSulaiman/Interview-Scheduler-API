@@ -12,7 +12,7 @@ class AvailabilitySerializerTest(TestCase):
     
     def test_availability_serializer_valid(self):
         data = {
-            "date": "2025-01-12",
+            "date": "2025-02-12",
             "start_time": "10:00:00",
             "end_time": "13:00:00"
         }
