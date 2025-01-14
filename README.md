@@ -129,8 +129,8 @@ interviewer_id: The ID of the interviewer
         },
         {
             "date": "2025-01-11",
-            "start_time": "14:00:00",
-            "end_time": "15:00:00"
+            "start_time": "11:00:00",
+            "end_time": "12:00:00"
         }
     ]
 }
